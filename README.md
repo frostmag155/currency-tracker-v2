@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 💱 Currency Tracker v2 - Тестовое задание Full Stack Developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Описание проекта
 
-## Available Scripts
+Данный проект был реализован в рамках тестового задания на позицию Full Stack Developer. Задача заключалась в создании веб-приложения для анализа курсов валют Центробанка России с расчетом ключевых метрик.
 
-In the project directory, you can run:
+### 🎯 Техническое задание:
 
-### `npm start`
+**Основные требования:**
+1. Получение данных из API Центробанка России за последние 90 дней
+2. Расчет и отображение аналитики:
+   - Максимальный курс валюты (значение, валюта, дата)
+   - Минимальный курс валюты (значение, валюта, дата) 
+   - Среднее значение курса рубля за весь период по всем валютам
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Реализованный функционал:**
+- 📊 Парсинг данных с официального API ЦБ РФ
+- 🔍 Анализ курсов валют за указанный период
+- 📈 Расчет статистических показателей
+- 💎 Современный UI/UX дизайн с анимациями
+- 📱 Полностью адаптивный интерфейс
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Технологический стек
 
-### `npm test`
+### Frontend:
+- **React 19** - последняя версия фреймворка
+- **Framer Motion 12** - продвинутые анимации
+- **Lucide React** - современные иконки
+- **CSS3** - стеклянный дизайн (glassmorphism)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend & Deployment:
+- **REST API** - интеграция с API ЦБ РФ
+- **Vercel** - хостинг и автоматический деплой
+- **GitHub** - система контроля версий
 
-### `npm run build`
+## 📊 Особенности реализации
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Аналитика данных:
+- **Максимальный курс**: Определение пиковых значений с указанием валюты и даты
+- **Минимальный курс**: Выявление минимальных показателей с детализацией
+- **Среднее значение**: Расчет средней стоимости рубля по всем валютам
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Пользовательский интерфейс:
+- 🎬 Плавные анимации загрузки и переходов
+- 💎 Стеклянный дизайн (glassmorphism) 2025 года
+- 📱 Полная адаптивность для всех устройств
+- ⚡ Оптимизированная производительность
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 Live Demo
 
-### `npm run eject`
+**Проект доступен по ссылке:**  
+🔗 **[Анализ курса рубля](https://currency-tracker-v2.vercel.app/)**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠 Установка и запуск
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Клонирование репозитория
+git clone https://github.com/frostmag155/currency-tracker-v2.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Установка зависимостей
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Запуск в development режиме
+npm start
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Сборка для production
+npm run build
